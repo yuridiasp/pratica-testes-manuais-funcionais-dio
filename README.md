@@ -57,7 +57,7 @@ Este repositório contém a documentação de User Stories, incluindo mind maps,
 
 ### Consulta de Produtos
 
-![Mind-map: Consulta de Produtos](path/to/Mindmap_Consulta_de_Produtos.png)
+![Mind-map: Consulta de Produtos](mind-map/US1-Consulta-de-Produtos.pdf)
 
 ## Critérios de Aceitação
 
@@ -96,10 +96,6 @@ Os critérios de aceitação para cada User Story estão descritos na seção [U
 ### Sistema de Avaliação de Produtos
 - Avaliação não registrada
 - Avaliações não exibidas corretamente
-
-## Contribuição
-
-Se você deseja contribuir para este projeto, por favor siga as diretrizes de contribuição descritas no arquivo [CONTRIBUTING.md](CONTRIBUTING.md).
 
 ## Licença
 

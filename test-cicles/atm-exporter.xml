@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<project>
+    <projectId>10000</projectId>
+    <projectKey>SW</projectKey>
+    <exportDate>2024-06-21 13:54:25 UTC</exportDate>
+    <folders>
+        <folder fullPath="Avaliação" index="1"/>
+        <folder fullPath="Busca" index="0"/>
+    </folders>
+    <testCases>
+        <testCase id="165414357" key="SW-T1">
+            <attachments/>
+            <confluencePageLinks/>
+            <createdBy>Yuri Dias</createdBy>
+            <createdOn>2024-06-19 17:26:57 UTC</createdOn>
+            <customFields/>
+            <folder><![CDATA[Busca]]></folder>
+            <issues/>
+            <labels/>
+            <name><![CDATA[Usuário realiza busca de um produto por nome]]></name>
+            <objective><![CDATA[Verificar funcionalidade de busca de produtos]]></objective>
+            <owner>63f8b9730154af3bb2b09647</owner>
+            <priority><![CDATA[Normal]]></priority>
+            <status><![CDATA[Draft]]></status>
+            <parameters/>
+            <testDataWrapper/>
+            <testScript type="bdd">
+                <details><![CDATA[Given that I am on the main page of the mall
+When I enter "t-shirt" in the search field
+And click on the search button So
+Then I should see products related to the term "t-shirt"]]></details>
+            </testScript>
+        </testCase>
+        <testCase id="165414646" key="SW-T2">
+            <attachments/>
+            <confluencePageLinks/>
+            <createdBy>Yuri Dias</createdBy>
+            <createdOn>2024-06-19 17:30:15 UTC</createdOn>
+            <customFields/>
+            <folder><![CDATA[Busca]]></folder>
+            <issues/>
+            <labels/>
+            <name><![CDATA[Usuário realiza busca de um produto por nome busca por categoria]]></name>
+            <objective><![CDATA[Verificar funcionalidade de busca de produtos]]></objective>
+            <owner>63f8b9730154af3bb2b09647</owner>
+            <priority><![CDATA[Normal]]></priority>
+            <status><![CDATA[Draft]]></status>
+            <parameters/>
+            <testDataWrapper/>
+            <testScript type="bdd">
+                <details><![CDATA[Given that I am on the main page of the mall
+When I select the "electronics" category in the category filter
+And click on the search button
+Then I should see products belonging to the "electronics" category]]></details>
+            </testScript>
+        </testCase>
+        <testCase id="165414713" key="SW-T3">
+            <attachments/>
+            <confluencePageLinks/>
+            <createdBy>Yuri Dias</createdBy>
+            <createdOn>2024-06-19 17:32:04 UTC</createdOn>
+            <customFields/>
+            <folder><![CDATA[Busca]]></folder>
+            <issues/>
+            <labels/>
+            <name><![CDATA[Usuário realiza busca de um produto por faixa de preço]]></name>
+            <objective><![CDATA[Verificar funcionalidade de busca de produtos]]></objective>
+            <owner>63f8b9730154af3bb2b09647</owner>
+            <priority><![CDATA[Normal]]></priority>
+            <status><![CDATA[Draft]]></status>
+            <parameters/>
+            <testDataWrapper/>
+            <testScript type="bdd">
+                <details><![CDATA[Given that I am on the main page of the mall
+When I enter the price range "50-100" into the price filter
+And click on the search button
+Then I should see products priced between "50" and "100"]]></details>
+            </testScript>
+        </testCase>
+        <testCase id="165414886" key="SW-T4" paramType="PARAMETER">
+            <attachments/>
+            <confluencePageLinks/>
+            <createdBy>Yuri Dias</createdBy>
+            <createdOn>2024-06-19 17:33:46 UTC</createdOn>
+            <customFields/>
+            <folder><![CDATA[Avaliação]]></folder>
+            <issues/>
+            <labels/>
+            <name><![CDATA[Usuário avalia um produto]]></name>
+            <objective><![CDATA[Verificar fun&ccedil;&atilde;o de avalia&ccedil;&atilde;o de produtos]]></objective>
+            <owner>63f8b9730154af3bb2b09647</owner>
+            <priority><![CDATA[Normal]]></priority>
+            <status><![CDATA[Draft]]></status>
+            <parameters>
+                <parameter index="0">
+                    <defaultValue><![CDATA[172.191.0.1]]></defaultValue>
+                    <name><![CDATA[Servidor QA]]></name>
+                </parameter>
+            </parameters>
+            <testDataWrapper/>
+            <testScript type="steps">
+                <steps>
+                    <step index="0">
+                        <customFields/>
+                        <description><![CDATA[Acessar a url do produto X]]></description>
+                        <expectedResult><![CDATA[Usu&aacute;rio visualizar&aacute; a p&aacute;gina do produto X com a fun&ccedil;&atilde;o de avalia&ccedil;&atilde;o de produto desabilitada]]></expectedResult>
+                    </step>
+                    <step index="1">
+                        <customFields/>
+                        <description><![CDATA[Realiza a compra do produto X]]></description>
+                        <expectedResult><![CDATA[Usu&aacute;rio visualizar&aacute; a tela de confirma&ccedil;&atilde;o de compra]]></expectedResult>
+                    </step>
+                    <step index="2">
+                        <customFields/>
+                        <description><![CDATA[Acessar a url do produto X]]></description>
+                        <expectedResult><![CDATA[Usu&aacute;rio visualizar&aacute; a p&aacute;gina do produto X com a fun&ccedil;&atilde;o de avalia&ccedil;&atilde;o de produto habilitada]]></expectedResult>
+                    </step>
+                    <step index="3">
+                        <customFields/>
+                        <description><![CDATA[Clicar em avaliar produto]]></description>
+                        <expectedResult><![CDATA[Abre-se o campo de texto de avalia&ccedil;&atilde;o e cinco &iacute;cones de avalia&ccedil;&atilde;o em formato de estrelas na cor amarelo-escuro, referindo-se a avalia&ccedil;&atilde;o em escala de 1 a 5]]></expectedResult>
+                    </step>
+                    <step index="4">
+                        <customFields/>
+                        <description><![CDATA[Usu&aacute;rio digita o texto de avalia&ccedil;&atilde;o]]></description>
+                        <expectedResult><![CDATA[Texto &eacute; inserido no input]]></expectedResult>
+                        <testData><![CDATA[Produto muito bom!]]></testData>
+                    </step>
+                    <step index="5">
+                        <customFields/>
+                        <description><![CDATA[Usu&aacute;rio clica nas estrelas para avaliar]]></description>
+                        <expectedResult><![CDATA[As 5 estrelas ficam com cor amarelo]]></expectedResult>
+                        <testData><![CDATA[5 estrelas]]></testData>
+                    </step>
+                    <step index="6">
+                        <customFields/>
+                        <description><![CDATA[Usu&aacute;rio clica no bot&atilde;o salvar]]></description>
+                        <expectedResult><![CDATA[Mensagem de confirma&ccedil;&atilde;o de registro de avalia&ccedil;&atilde;o &eacute; exibida]]></expectedResult>
+                    </step>
+                </steps>
+            </testScript>
+        </testCase>
+        <testCase id="165416260" key="SW-T5">
+            <attachments/>
+            <confluencePageLinks/>
+            <createdBy>Yuri Dias</createdBy>
+            <createdOn>2024-06-19 17:52:58 UTC</createdOn>
+            <customFields/>
+            <folder><![CDATA[Avaliação]]></folder>
+            <issues/>
+            <labels/>
+            <name><![CDATA[Usuário consulta avaliações anteriores de um produto]]></name>
+            <objective><![CDATA[<span style="color: rgb(0,0,0);font-family: sans-serif;font-size: 14.0px;font-style: normal;font-weight: 400;letter-spacing: -0.07px;orphans: 2;text-align: left;text-indent: 0.0px;text-transform: none;widows: 2;word-spacing: 0.0px;white-space: normal;background-color: rgb(255,255,255);display: inline !important;float: none;" id="isPasted">Verificar fun&ccedil;&atilde;o de avalia&ccedil;&atilde;o de produtos</span>]]></objective>
+            <owner>63f8b9730154af3bb2b09647</owner>
+            <priority><![CDATA[Normal]]></priority>
+            <status><![CDATA[Draft]]></status>
+            <parameters/>
+            <testDataWrapper/>
+            <testScript type="steps">
+                <steps>
+                    <step index="0">
+                        <customFields/>
+                        <description><![CDATA[Acessar a p&aacute;gina do produto X]]></description>
+                        <expectedResult><![CDATA[Usu&aacute;rio visualiza a p&aacute;gina do produto]]></expectedResult>
+                    </step>
+                    <step index="1">
+                        <customFields/>
+                        <description><![CDATA[Rola a p&aacute;gina at&eacute; a se&ccedil;&atilde;o de avalia&ccedil;&otilde;es&nbsp;]]></description>
+                        <expectedResult><![CDATA[Usu&aacute;rio visualiza as avalia&ccedil;&otilde;es de outros clientes para este produto&nbsp;]]></expectedResult>
+                    </step>
+                </steps>
+            </testScript>
+        </testCase>
+        <testCase id="165416299" key="SW-T6">
+            <attachments/>
+            <confluencePageLinks/>
+            <createdBy>Yuri Dias</createdBy>
+            <createdOn>2024-06-19 17:53:28 UTC</createdOn>
+            <customFields/>
+            <folder><![CDATA[Avaliação]]></folder>
+            <issues/>
+            <labels/>
+            <name><![CDATA[Usuário consulta a média das avaliações de um produto]]></name>
+            <objective><![CDATA[<span style="color: rgb(0,0,0);font-family: sans-serif;font-size: 14.0px;font-style: normal;font-weight: 400;letter-spacing: -0.07px;orphans: 2;text-align: left;text-indent: 0.0px;text-transform: none;widows: 2;word-spacing: 0.0px;white-space: normal;background-color: rgb(255,255,255);display: inline !important;float: none;" id="isPasted">Verificar fun&ccedil;&atilde;o de avalia&ccedil;&atilde;o de produtos</span>]]></objective>
+            <owner>63f8b9730154af3bb2b09647</owner>
+            <priority><![CDATA[Normal]]></priority>
+            <status><![CDATA[Draft]]></status>
+            <parameters/>
+            <testDataWrapper/>
+            <testScript type="steps">
+                <steps>
+                    <step index="0">
+                        <customFields/>
+                        <description><![CDATA[Acessar a p&aacute;gina do produto X]]></description>
+                        <expectedResult><![CDATA[Usu&aacute;rio visualiza a p&aacute;gina do produto]]></expectedResult>
+                    </step>
+                    <step index="1">
+                        <customFields/>
+                        <description><![CDATA[Rola a p&aacute;gina at&eacute; a se&ccedil;&atilde;o de avalia&ccedil;&otilde;es&nbsp;]]></description>
+                        <expectedResult><![CDATA[Usu&aacute;rio visualiza as avalia&ccedil;&otilde;es de outros clientes para este produto&nbsp;]]></expectedResult>
+                    </step>
+                    <step index="2">
+                        <customFields/>
+                        <description><![CDATA[Estando na se&ccedil;&atilde;o de avalia&ccedil;&otilde;es]]></description>
+                        <expectedResult><![CDATA[Usu&aacute;rio visualiza a m&eacute;dia das avalia&ccedil;&otilde;es calculada e exibida&nbsp;]]></expectedResult>
+                    </step>
+                </steps>
+            </testScript>
+        </testCase>
+    </testCases>
+</project>
